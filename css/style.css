@@ -609,6 +609,30 @@ body {
   .prioritise__list{
     gap: 30px 210px;
   }
+
+  .footer__blockquote{
+    width: 270px;
+  }
+
+  .footer__blockquote-text{
+    margin-top: 0;
+  }
+
+  .footer__inner{
+    margin-bottom: 55px;
+  }
+
+  .footer__copy{
+    margin-right: 80px;
+  }
+
+  .footer__nav-logo{
+    margin-right: 35px;
+  }
+
+  .footer__contacts{
+    width: 270px;
+  }
 }
 
 @media (max-width: 979px) {
@@ -698,6 +722,21 @@ body {
     margin-left: auto;
     margin-right: 154px;
   }
+
+  .footer__inner{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer__products,
+  .footer__company{
+    grid-row: span  3;
+  }
+
+  .footer__contacts{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
 }
 
 @media (max-width: 768px) {
@@ -730,6 +769,10 @@ body {
 
   .prioritise__list{
     gap: 30px 133px;
+  }
+
+  .footer__copy{
+    margin-right: 120px;
   }
 }
 
@@ -802,6 +845,69 @@ body {
 
 }
 
+@media (max-width: 530px) {
+  .footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__blockquote{
+    width: 100%;
+  }
+
+  .footer__blockquote-text{
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+
+  .footer__contacts{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .footer__contacts-title{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer__contacts-text{
+    text-align: center;
+  }
+
+  .footer__nav{
+    flex-wrap: nowrap;
+  }
+
+  .footer__social{
+    margin-left: 30px;
+  }
+
+  .footer__copy{
+    margin-right: auto;
+  }
+
+  .footer__products{
+    margin-right: auto;
+    padding-right: 20px;
+  }
+
+  .footer__company{
+    padding-right: 20px;
+    margin-right: 55px;
+  }
+
+  .footer__products-title,
+  .footer__company-title{
+    margin-bottom: 30px;
+  }
+
+  .footer{
+    padding: 50px 0 10px;
+  }
+
+  
+}
+
 @media (max-width: 480px) {
   .logo {
     margin-right: 80px;
@@ -826,6 +932,8 @@ body {
   .main-blog__item-img{
     max-width: 230px;
   }
+
+  
 }
 
 @media (max-width: 476px) {
@@ -861,6 +969,25 @@ body {
 
   .main-blog__list{
     justify-content: center;
+  }
+
+  .footer__company{
+    padding-right: 15px;
+    margin-right: 0;
+  }
+
+  .footer__nav{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__products{
+    padding-right: 10px;
+  }
+
+  .footer__social{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
