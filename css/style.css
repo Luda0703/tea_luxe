@@ -399,6 +399,126 @@ body {
   margin-bottom: 30px;
 }
 
+/* ///////// FOOTER ///////// */
+
+.footer{
+  padding: 100px 0 20px;
+  background-color: #F7F2EA;
+}
+
+.footer__inner{
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 40px;
+}
+
+.footer__bottom{
+  display: flex;
+}
+
+.footer__copy{
+  margin-right: 192px;
+  font-size: 16px;
+}
+
+.partners-logo{
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.footer__products-title,
+.footer__company-title,
+.footer__contacts-title{
+  font-size: 24px;
+  font-family: "Cormorant", serif;
+  margin-bottom: 50px;
+}
+
+.footer__products-item,
+.footer__company-item{
+  margin-bottom: 20px;
+}
+
+.footer__blockquote-text{
+  margin-top: 80px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.footer__blockquote-autor{
+  font-size: 12px;
+  font-style: normal;
+}
+
+.footer__blockquote-autor span{
+  display: block;
+}
+
+.footer__contacts-title{
+  font-weight: 400;
+}
+
+.footer__contacts-text{
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.footer__nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav-logo{
+  margin-right: 40px;
+}
+
+.footer__nav-contacts{
+  margin-top: 20px;
+}
+
+.footer__nav-phone,
+.footer__nav-email{
+  font-size: 13px;
+  position: relative;
+  padding-left: 32px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__nav-phone::before,
+.footer__nav-email::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../images/mail.svg);
+}
+
+.footer__nav-phone::before{
+  background-image: url(../images/tel.svg);
+  width: 21px;
+  height: 21px;
+  
+}
+
+.footer__social{
+  margin-top: 40px;
+  margin-left: 110px;
+}
+
+.footer__social-list{
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.footer__social-link{
+  display: grid;
+}
 
 /* ///////// ADAPTIVE ///////// */
 
@@ -473,10 +593,6 @@ body {
   .assortment {
     margin-bottom: 120px;
   }
-
-  /* .reviews__item.reviews__item-hide{
-    display: none;
-  } */
 
   .reviews__item:last-child{
     display: none;
